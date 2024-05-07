@@ -38,7 +38,7 @@ const syncWithDatabaseMiddleware: Middleware = (store) => (next) => (action) => 
                 toast.success(`Usuario ${userIdToRemove} eliminado correctamente`)
             }
 
-            throw new Error('Error al eliminar el usuario')
+            // throw new Error('Error al eliminar el usuario')
         })
         .catch(err => {
             toast.error(`Error borrando usuario ${userIdToRemove}`)
