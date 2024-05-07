@@ -25,9 +25,6 @@ export function CreateNewUser () {
         addUser({name, email, github})
         setResult('OK')
         form.reset()
-
-
-
     }
     return (
         <Card style = {{ marginTop: '16px' }}>
